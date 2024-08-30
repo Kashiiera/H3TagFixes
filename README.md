@@ -23,7 +23,9 @@ Currently, the following fixes and QoL improvements have been implemented:
 
 All scenario cubemaps have been regenerated with compression disabled, removing visual artifacts and washed out colors
 
+Before:
 ![Cubemaps on Icebox before regenerating cubemaps with compression disabled](assets/cubemaps_turf_before.png)
+After:
 ![Cubemaps on Icebox after regenerating cubemaps with compression disabled](assets/cubemaps_turf_after.png)
 
 
