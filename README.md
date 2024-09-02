@@ -28,10 +28,13 @@ Before:
 After:
 ![Cubemaps on Icebox after regenerating cubemaps with compression disabled](assets/cubemaps_turf_after.png)
 
+## Arbiter
+Arbiter in Campaign Co-Op now has sounds for dying and being damaged heavily again, previously the dialogue field was empty which meant he had no dialogue at all. This field is now pointing to a new `arbiter_coop.dialogue` tag which only consists of `dth`, `pain` and `thrwn` sound tags.
+
+## Elites
+Elites in Campaign Co-Op and Multiplayer now play their correct shield low, shield depleted and shield recharging sounds instead of playing Masterchief's. This also applies to Co-Op Arbiter.
 
 ## Frag Grenades
+Frag Grenades now emit a light again when thrown like in previous games
 
-### objects\weapons\grenade\frag_grenade\frag_grenade.projectile
-In the attachments block the `projectile.light` tag now parents to the `light` marker instead of the invalid `root` marker, which allows the light to appear again when throwing the frag grenade
-
-[def]: https://myoctocat.com/assets/images/a-octocat.svg
+The light was parented to an invalid marker which meant the light would just not create at all, parenting the light to the `light` marker allows it to attach again
