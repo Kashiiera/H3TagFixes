@@ -52,3 +52,6 @@ The light was parented to an invalid marker which meant the light would just not
 
 ### theHostileNegotiator
 * Fixing the collision models for the Flood Combat Forms
+
+### J-S
+* Figuring out the solution to very compressed cubemaps
