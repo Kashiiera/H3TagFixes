@@ -4,8 +4,7 @@ This repository contains several tags for use with the H3EK, these tags fix seve
 # Installation
 These tags are meant to overwrite the existing tags in your H3EK tags directory, if you modified them before make sure to back those up before installing!
 
-Simply just download the repository and drag and drop the "tags" folder from the repository into your H3EK folder. When asked to replace, hit "Yes".
-
+Simply just download the repository and drag and drop the "tags" and "data" folder from the repository into your H3EK folder. When asked to replace, hit "Yes".
 
 # What has changed?
 Currently, the following fixes and QoL improvements have been implemented:
@@ -18,7 +17,7 @@ Currently, the following fixes and QoL improvements have been implemented:
 
 > [!NOTE]
 > 
-> Only cubemaps placed in the scenario themselves have been regenrated, standalone cubemaps referenced in shaders have not been regenerated.
+> Only cubemaps placed in the scenario themselves have been regenrated, cubemaps generated with "screenshot_cubemap" have not been regenerated.
 > 
 
 All scenario cubemaps have been regenerated with compression disabled, removing visual artifacts and washed out colors
@@ -34,7 +33,22 @@ Arbiter in Campaign Co-Op now has sounds for dying and being damaged heavily aga
 ## Elites
 Elites in Campaign Co-Op and Multiplayer now play their correct shield low, shield depleted and shield recharging sounds instead of playing Masterchief's. This also applies to Co-Op Arbiter.
 
+## Flood Combat Forms
+Fixes collision issues with all Flood Combat Forms. 
+
+By default the collision for limbs and corpses remained and did not contribute to the damage taken by Flood Combat Forms and for the Elite Flood Combat Forms in specific, the "Destroyed Torso" permutation was incorrectly labelled as "Destroyed Head" which meant that hitting a headless Elite Flood Combat Form at specific spots did not deal any damage.
+
 ## Frag Grenades
 Frag Grenades now emit a light again when thrown like in previous games
 
 The light was parented to an invalid marker which meant the light would just not create at all, parenting the light to the `light` marker allows it to attach again
+
+# Credits
+
+### Kashiiera
+* Restoring Arbiter's Co-Op dialogue
+* Restoring the CHUD sounds for Elites
+* Restoring missing lights for Frag Grenades
+
+### theHostileNegotiator
+* Fixing the collision models for the Flood Combat Forms
