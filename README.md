@@ -31,7 +31,14 @@ After:
 Arbiter in Campaign Co-Op now has sounds for dying and being damaged heavily again, previously the dialogue field was empty which meant he had no dialogue at all. This field is now pointing to a new `arbiter_coop.dialogue` tag which only consists of `dth`, `pain` and `thrwn` sound tags.
 
 ## Elites
-Elites in Campaign Co-Op and Multiplayer now play their correct shield low, shield depleted and shield recharging sounds instead of playing Masterchief's. This also applies to Co-Op Arbiter.
+> [!NOTE]
+> 
+> All of these fixes and changes will also apply to both Arbiter and Co-Op Arbiter
+>
+
+Elites in Campaign Co-Op and Multiplayer now play their correct shield low, shield depleted and shield recharging sounds instead of playing Masterchief's.
+
+Elites will now keep their rifles lowered when walking around while weapons are lowered, previously they were only lowered if they were standing still.
 
 ## Flood Combat Forms
 Fixes collision issues with all Flood Combat Forms. 
@@ -49,6 +56,8 @@ The light was parented to an invalid marker which meant the light would just not
 * Restoring Arbiter's Co-Op dialogue
 * Restoring the CHUD sounds for Elites
 * Restoring missing lights for Frag Grenades
+
+* Fixing Elites their rifles not staying lowered while walking around
 
 ### theHostileNegotiator
 * Fixing the collision models for the Flood Combat Forms
